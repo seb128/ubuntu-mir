@@ -386,8 +386,8 @@ TODO-C:   process for them is handled as part of this bug here.
 
 [Standards compliance]
 RULE: - Major violations should be documented and justified.
-RULE:   - [[https://refspecs.linuxfoundation.org/fhs.shtml|FHS]]
-RULE:   - [[https://www.debian.org/doc/debian-policy/|Debian Policy]]
+RULE:   - FHS: https://refspecs.linuxfoundation.org/fhs.shtml
+RULE:   - Debian Policy: https://www.debian.org/doc/debian-policy/
 TODO-A: - This package correctly follows FHS and Debian Policy
 TODO-B: - This package violates FHS or Debian Polciy, reasons for that are TBD
 
@@ -699,9 +699,8 @@ RULE:     create the package)?
 RULE:   - Does debian/control use `Built-Using: ${misc:Built-Using}` for each
 RULE:     non'-dev' binary package (importantly, golang-*-dev packages only
 RULE:     ship source files so don't need Built-Using)?
-RULE:   - Does the package follow
-RULE:     [[https://go-team.pages.debian.net/packaging.html|Debian Go packaging]]
-RULE:     guidelines?
+RULE:   - Does the package follow Debian Go packaging guidelines?
+RULE:     (See: https://go-team.pages.debian.net/packaging.html)    
 RULE: - When it is infeasible to comply with this policy, the justification,
 RULE:   discussion and approval should all be clearly represented in the bug.
 
@@ -788,8 +787,9 @@ TODO-B: Problems: None
 RULE: - Does Ubuntu carry a non necessary delta?
 RULE: - If it's a library, does it either have a symbols file or use an empty
 RULE:   argument to dh_makeshlibs -V? (pass such a patch on to Debian, but
-RULE:   don't block on it). Note that for C++, see [[DailyRelease/FAQ]] for a
-RULE:   method to demangle C++ symbols files.
+RULE:   don't block on it).
+RULE:   Note that for C++, see https://wiki.ubuntu.com/DailyRelease/FAQ 
+RULE:   for a method to demangle C++ symbols files.
 RULE: - Does it have a watch file? (If relevant, e.g. non-native)
 RULE: - Is its update history slow or sporadic?
 RULE: - Is the current release packaged?
